@@ -46,37 +46,103 @@ function App() {
               Ağırlıklı olarak <span className="text-purple-400 font-semibold">Java Backend</span> geliştirme alanında uzmanlaşmakla birlikte, Frontend ve altyapı süreçlerinde de deneyimliyim.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Özel ilgim <span className="text-purple-400 font-semibold">siber güvenlik</span> alanında olup, bu konuda aktif olarak kendimi geliştirmekteyim.
-            </p>
+  Özel ilgim <span className="text-purple-400 font-semibold">siber güvenlik ve yapay zeka</span> alanında olup, bu konuda aktif olarak kendimi geliştirmekteyim.</p>
           </div>
         </div>
       </section>
-
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Teknik Yetenekler</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-purple-400 mb-4">Backend</h3>
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">Programlama Dilleri</h3>
               <ul className="text-gray-300 space-y-2">
-                <li>• Java, Spring Boot</li>
+                <li>• Java</li>
+                <li>• Swift</li>
+                <li>• Python</li>
+              </ul>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">Backend / Frameworkler</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Spring Boot</li>
                 <li>• RESTful API</li>
-                <li>• MySQL, PostgreSQL</li>
+                <li>• OOP Prensipleri</li>
               </ul>
             </div>
             <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-purple-400 mb-4">Frontend</h3>
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">Web Geliştirme</h3>
               <ul className="text-gray-300 space-y-2">
-                <li>• HTML, CSS, JavaScript</li>
+                <li>• HTML</li>
+                <li>• CSS</li>
+                <li>• JavaScript</li>
                 <li>• React</li>
-                <li>• Responsive Design</li>
+                <li>• Responsive Tasarım</li>
               </ul>
             </div>
             <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-purple-400 mb-4">Mobile</h3>
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">Veritabanları</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• MySQL</li>
+                <li>• PostgreSQL</li>
+                <li>• Firebase</li>
+              </ul>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">Versiyon Kontrolü</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Git</li>
+                <li>• GitHub</li>
+                <li>• Proje Dokümantasyonu</li>
+              </ul>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">Mobil Geliştirme</h3>
               <ul className="text-gray-300 space-y-2">
                 <li>• iOS (Swift)</li>
-                <li>• Firebase</li>
+                <li>• Firebase Entegrasyonu</li>
+              </ul>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">DevOps / Container</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Docker</li>
+                <li>• Geliştirme ortamı kurulumu</li>
+              </ul>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">İşletim Sistemleri</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Windows</li>
+                <li>• Linux</li>
+                <li>• Active Directory</li>
+                <li>• IIS & Tomcat</li>
+              </ul>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">Ağ & Donanım</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• TCP/IP</li>
+                <li>• LAN/WAN</li>
+                <li>• Router/Switch</li>
+                <li>• VPN</li>
+                <li>• Güvenlik Duvarı</li>
+              </ul>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">Sanal Sunucu & Yedekleme</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• VMware</li>
+                <li>• Hyper-V</li>
+                <li>• Temel yedekleme çözümleri</li>
+              </ul>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">Genel IT Becerileri</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Problem çözme</li>
+                <li>• Teknik destek</li>
+                <li>• Güvenlik farkındalığı</li>
               </ul>
             </div>
           </div>
@@ -96,6 +162,31 @@ function App() {
               <h3 className="text-xl font-semibold text-white mb-3">📚 Kütüphane Yönetim Sistemi</h3>
               <p className="text-gray-400 mb-3">Kitap ödünç alma ve kullanıcı yönetimi</p>
               <span className="text-sm text-purple-400">Java • Backend</span>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-white mb-3">🧑‍🏫 Öğretmen-Öğrenci Kurs Yönetim Sistemi</h3>
+              <p className="text-gray-400 mb-3">Kullanıcı kaydı, kurs atama ve yoklama yönetimi özelliklerine sahip backend uygulaması.</p>
+              <span className="text-sm text-purple-400">Java • Backend</span>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-white mb-3">🖥️ Kullanıcı Yönetim Sistemi (ASP .NET Core – geliştirme aşamasında)</h3>
+              <p className="text-gray-400 mb-3">Web tabanlı admin paneli; kullanıcı kaydı, giriş ve şifre sıfırlama işlemleri.</p>
+              <span className="text-sm text-purple-400">ASP .NET Core</span>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-white mb-3">🛍️ Alışveriş Listesi Uygulaması</h3>
+              <p className="text-gray-400 mb-3">Alışveriş listesi oluşturma ve düzenleme özelliklerine sahip mobil uygulama.</p>
+              <span className="text-sm text-purple-400">Swift / iOS</span>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-white mb-3">🌍 Şehir Rehberi Uygulaması.</h3>
+              <p className="text-gray-400 mb-3">Türk şehirleri hakkında bilgiler içeren tanıtım uygulaması.</p>
+              <span className="text-sm text-purple-400">Swift / iOS</span>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-white mb-3">🗺️ Harita Uygulaması</h3>
+              <p className="text-gray-400 mb-3">Kullanıcının mevcut konumunu harita üzerinde gösteren uygulama.</p>
+              <span className="text-sm text-purple-400">Swift / iOS</span>
             </div>
           </div>
         </div>
