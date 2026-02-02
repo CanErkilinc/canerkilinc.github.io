@@ -159,6 +159,11 @@ function App() {
               <span className="text-sm text-purple-400">Java • Spring Boot • React</span>
             </div>
             <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-white mb-3">💪🏻 Fit Rehberim</h3>
+              <p className="text-gray-400 mb-3">Kullanıcıların fiziksel özelliklerine, fitness hedeflerine ve haftalık müsait günlerine göre kişiselleştirilmiş programlar oluşturan bir Spring Boot API'si.</p>
+              <span className="text-sm text-purple-400">Java • Backend</span>
+            </div>
+            <div className="bg-slate-800 bg-opacity-50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-white mb-3">📚 Kütüphane Yönetim Sistemi</h3>
               <p className="text-gray-400 mb-3">Kitap ödünç alma ve kullanıcı yönetimi</p>
               <span className="text-sm text-purple-400">Java • Backend</span>
@@ -219,4 +224,3 @@ function App() {
 }
 
 export default App
-// Deploy fix - 26 Oca 2026 Pts +03 14:02:34
