@@ -187,7 +187,22 @@ const styles = `
   .pf-footer-links a:hover { color: var(--accent); }
 
   @media (max-width: 900px) { .pf-feat-inner { grid-template-columns: 1fr; } .pf-feat-visual { min-height: 200px; } }
+  @media (max-width: 768px) { .pf-nav { padding: 1rem 1.5rem; } .pf-nav-links { display: none; } .pf-section, .pf-section-alt { padding: 4rem 1.5rem; } .pf-hero { padding: 7rem 1.5rem 4rem; } .pf-about-grid { grid-template-columns: 1fr; gap: 3rem; } .pf-photo-wrap { order: -1; } .pf-contact-box { grid-template-columns: 1fr; padding: 2rem; gap: 2.5rem; } .pf-footer { flex-direction: column; gap: 1rem; text-align: center; } .pf-feat-content { padding: 2rem; } 
+    @media (max-width: 900px) { .pf-feat-inner { grid-template-columns: 1fr; } .pf-feat-visual { min-height: 200px; } }
   @media (max-width: 768px) { .pf-nav { padding: 1rem 1.5rem; } .pf-nav-links { display: none; } .pf-section, .pf-section-alt { padding: 4rem 1.5rem; } .pf-hero { padding: 7rem 1.5rem 4rem; } .pf-about-grid { grid-template-columns: 1fr; gap: 3rem; } .pf-photo-wrap { order: -1; } .pf-contact-box { grid-template-columns: 1fr; padding: 2rem; gap: 2.5rem; } .pf-footer { flex-direction: column; gap: 1rem; text-align: center; } .pf-feat-content { padding: 2rem; } }
+
+  /* MOBİL İÇİN DİL BUTONU */
+  @media (max-width: 768px) {
+    .portfolio-root > div:first-child {
+      top: 70px !important;
+      right: 10px !important;
+      padding: 5px 10px !important;
+    }
+    .portfolio-root > div:first-child button {
+      padding: 3px 8px !important;
+      font-size: 0.7rem !important;
+    }
+  }
 `
 
 const contactLinks = [
@@ -492,27 +507,45 @@ export default function App() {
   return (
     <div className="portfolio-root">
 
-      {/* DİL BUTONLARI */}
+            {/* DİL BUTONLARI */}
       <div style={{
-        position: 'fixed', top: '80px', left: '20px', zIndex: 999999,
-        display: 'flex', gap: '8px', background: '#1e1e2a',
-        padding: '8px 12px', borderRadius: '40px',
+        position: 'fixed',
+        top: '80px',
+        right: '20px',
+        zIndex: 999999,
+        display: 'flex',
+        gap: '8px',
+        background: '#1e1e2a',
+        padding: '8px 12px',
+        borderRadius: '40px',
         border: '1px solid rgba(255,255,255,0.1)'
       }}>
         <button onClick={() => setLang('tr')} style={{
           background: lang === 'tr' ? '#C8FB4A' : 'transparent',
-          color: lang === 'tr' ? '#0A0A0F' : '#fff', border: 'none',
-          padding: '6px 14px', borderRadius: '30px', cursor: 'pointer', fontWeight: 'bold'
+          color: lang === 'tr' ? '#0A0A0F' : '#fff',
+          border: 'none',
+          padding: '6px 14px',
+          borderRadius: '30px',
+          cursor: 'pointer',
+          fontWeight: 'bold'
         }}>🇹🇷 TR</button>
         <button onClick={() => setLang('en')} style={{
           background: lang === 'en' ? '#C8FB4A' : 'transparent',
-          color: lang === 'en' ? '#0A0A0F' : '#fff', border: 'none',
-          padding: '6px 14px', borderRadius: '30px', cursor: 'pointer', fontWeight: 'bold'
+          color: lang === 'en' ? '#0A0A0F' : '#fff',
+          border: 'none',
+          padding: '6px 14px',
+          borderRadius: '30px',
+          cursor: 'pointer',
+          fontWeight: 'bold'
         }}>🇬🇧 EN</button>
         <button onClick={() => setLang('de')} style={{
           background: lang === 'de' ? '#C8FB4A' : 'transparent',
-          color: lang === 'de' ? '#0A0A0F' : '#fff', border: 'none',
-          padding: '6px 14px', borderRadius: '30px', cursor: 'pointer', fontWeight: 'bold'
+          color: lang === 'de' ? '#0A0A0F' : '#fff',
+          border: 'none',
+          padding: '6px 14px',
+          borderRadius: '30px',
+          cursor: 'pointer',
+          fontWeight: 'bold'
         }}>🇩🇪 DE</button>
       </div>
 
