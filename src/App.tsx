@@ -32,6 +32,35 @@ const styles = `
   .pf-nav-links a { color: var(--muted); font-size: 0.9rem; text-decoration: none; transition: color 0.2s; }
   .pf-nav-links a:hover { color: var(--accent); }
 
+  /* Mobilde sabit dil butonları */
+  .lang-buttons {
+    display: flex;
+    gap: 5px;
+    background: rgba(30,30,42,0.8);
+    padding: 4px 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  @media (max-width: 768px) {
+    .lang-buttons {
+      position: fixed;
+      top: 70px;
+      right: 10px;
+      z-index: 999;
+      background: rgba(30,30,42,0.95);
+      backdrop-filter: blur(8px);
+      padding: 5px 10px;
+    }
+    .lang-buttons button {
+      padding: 4px 8px !important;
+      font-size: 0.65rem !important;
+    }
+    .pf-hero {
+      padding-top: 100px !important;
+    }
+  }
+
   .pf-hero { min-height: 100vh; display: flex; align-items: center; padding: 7rem 2rem 4rem; position: relative; overflow: hidden; }
   .pf-hero-bg { position: absolute; top: 0; right: 0; width: 60%; height: 100%; background: linear-gradient(135deg, transparent 40%, rgba(123,94,167,0.08) 100%); pointer-events: none; }
   .pf-hero-dots { position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(200,251,74,0.06) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; }
@@ -128,7 +157,7 @@ const styles = `
   @media (max-width: 768px) { 
     .pf-nav { padding: 0.75rem 1rem; }
     .pf-nav-links { display: none; }
-    .pf-hero { padding: 6rem 1rem 3rem; }
+    .pf-hero { padding: 100px 1rem 3rem !important; }
     .pf-section, .pf-section-alt { padding: 3rem 1rem; }
     .pf-about-grid { grid-template-columns: 1fr; gap: 2rem; }
     .pf-photo-wrap { order: -1; }
@@ -457,15 +486,8 @@ export default function App() {
           <li><a href="#iletisim">{t('İletişim', 'Contact', 'Kontakt')}</a></li>
         </ul>
         
-        {/* DİL BUTONLARI - NAVBAR İÇİNDE */}
-        <div style={{
-          display: 'flex',
-          gap: '5px',
-          background: 'rgba(30,30,42,0.8)',
-          padding: '4px 10px',
-          borderRadius: '30px',
-          border: '1px solid rgba(255,255,255,0.1)'
-        }}>
+        {/* DİL BUTONLARI */}
+        <div className="lang-buttons">
           <button onClick={() => setLang('tr')} style={{
             background: lang === 'tr' ? '#C8FB4A' : 'transparent',
             color: lang === 'tr' ? '#0A0A0F' : '#fff',
